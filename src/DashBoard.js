@@ -86,6 +86,7 @@ const DashBoard = () => {
   );
 
   const mobileMenuId = "primary-search-account-menu-mobile";
+  console.log(mobileMenuId, "Hamza");
 
   return (
     <>
