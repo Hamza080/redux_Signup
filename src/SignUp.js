@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import { signUpAuth } from "./redux/signUpSlice";
 import { useDispatch } from "react-redux";
 import Link from "@mui/material/Link";
-
+/////HAMZAZZZZZZZZZAAAAAAAA
 const SignUp = () => {
   const dispatch = useDispatch();
   const [name, setName] = useState("");
@@ -122,5 +122,5 @@ const SignUp = () => {
     </>
   );
 };
-
+///////AAAAAAAAAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 export default SignUp;

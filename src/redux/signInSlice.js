@@ -5,14 +5,12 @@ const initialState = {
   isAuthenticated: false,
 };
 export const loginAuth = createAsyncThunk("users", async (payload) => {
-  // let navigate = useNavigate();
   const response = await axios.post(
     "https://taskforum.herokuapp.com/api/auth/signin",
     payload
   );
-
+  ///////AAAAAAAAAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
   if (response.status === 200) {
-    // navigate("/dashboard");
     return response.data;
   } else {
     return response.data;
