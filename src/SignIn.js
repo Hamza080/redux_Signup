@@ -19,13 +19,14 @@ const SignIn = () => {
   const navigate = useNavigate();
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
-
+  console.log(loginPassword, "#rd Commint");
   const dispatch = useDispatch();
   const signInAuth = async () => {
     const user = { email: loginEmail, password: loginPassword };
     console.log(user, "user");
     await dispatch(loginAuth(user));
     navigate("/dashboard");
+    console.log(navigate, "user");
   };
 
   return (
